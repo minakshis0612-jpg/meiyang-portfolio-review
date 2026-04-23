@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Review — Meiyang Chang — Shashikesh Asset Services LLP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy-900: #060C16;
+    --navy-800: #0D1B2E;
+    --navy-700: #122539;
+    --navy-600: #1A3049;
+    --navy-500: #243B57;
+    --ink-100: #F5F1E8;
+    --ink-200: #E4DED0;
+    --ink-400: #A8AFBC;
+    --ink-500: #6E7686;
+    --ink-600: #4A5364;
+    --teal: #00CEB0;
+    --teal-soft: rgba(0, 206, 176, 0.12);
+    --teal-line: rgba(0, 206, 176, 0.28);
+    --green: #3BD680;
+    --red: #E85D5D;
+    --amber: #E8B84A;
+  }
+
+- {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+font-family: ‘DM Sans’, system-ui, sans-serif;
+background: var(–navy-900);
+color: var(–ink-100);
+line-height: 1.55;
+font-weight: 400;
+letter-spacing: -0.005em;
+}
+
+.page {
+max-width: 920px;
+margin: 0 auto;
+background: var(–navy-800);
+position: relative;
+}
+
+/* ———–– HEADER ———–– */
+.topbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1.75rem 3rem;
+border-bottom: 1px solid var(–navy-600);
+}
+
+.topbar-brand {
+display: flex;
+align-items: center;
+gap: 0.75rem;
+}
+
+.topbar-mark {
+width: 10px;
+height: 10px;
+background: var(–teal);
+border-radius: 2px;
+}
+
+.topbar-name {
+font-family: ‘Space Grotesk’, sans-serif;
+font-weight: 600;
+letter-spacing: 0.14em;
+font-size: 0.78rem;
+text-transform: uppercase;
+color: var(–ink-200);
+}
+
+.topbar-meta {
+font-family: ‘DM Sans’, sans-serif;
+font-size: 0.8rem;
+color: var(–ink-500);
+letter-spacing: 0.02em;
+}
+
+/* ———–– HERO ———–– */
+.hero {
+padding: 4.5rem 3rem 3rem;
+position: relative;
+}
+
+.hero-eyebrow {
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: 0.72rem;
+font-weight: 500;
+letter-spacing: 0.32em;
+color: var(–teal);
+text-transform: uppercase;
+margin-bottom: 1.5rem;
+}
+
+.hero-title {
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: clamp(2.5rem, 6vw, 4.25rem);
+font-weight: 500;
+line-height: 1.02;
+letter-spacing: -0.035em;
+color: var(–ink-100);
+margin-bottom: 1.5rem;
+}
+
+.hero-title em {
+font-style: italic;
+font-weight: 400;
+color: var(–teal);
+}
+
+.hero-lede {
+font-family: ‘DM Sans’, sans-serif;
+font-size: 1.12rem;
+font-weight: 300;
+line-height: 1.6;
+color: var(–ink-400);
+max-width: 620px;
+letter-spacing: 0.002em;
+}
+
+.hero-client {
+position: absolute;
+top: 4.5rem;
+right: 3rem;
+text-align: right;
+font-family: ‘DM Sans’, sans-serif;
+}
+
+.hero-client-label {
+font-size: 0.68rem;
+letter-spacing: 0.22em;
+text-transform: uppercase;
+color: var(–ink-500);
+margin-bottom: 0.35rem;
+}
+
+.hero-client-name {
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: 1.05rem;
+font-weight: 500;
+color: var(–ink-100);
+letter-spacing: -0.01em;
+}
+
+/* ———–– METRICS STRIP ———–– */
+.metrics {
+display: grid;
+grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
+border-top: 1px solid var(–navy-600);
+border-bottom: 1px solid var(–navy-600);
+margin: 3rem 0 0;
+}
+
+.metric {
+padding: 2rem 1.5rem 2rem 3rem;
+border-right: 1px solid var(–navy-600);
+position: relative;
+}
+
+.metric:last-child {
+border-right: none;
+padding-right: 3rem;
+}
+
+.metric:first-child {
+background: linear-gradient(180deg, var(–teal-soft) 0%, transparent 100%);
+}
+
+.metric-label {
+font-family: ‘DM Sans’, sans-serif;
+font-size: 0.72rem;
+letter-spacing: 0.14em;
+text-transform: uppercase;
+color: var(–ink-500);
+margin-bottom: 0.6rem;
+}
+
+.metric-value {
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: clamp(1.4rem, 2.4vw, 2rem);
+font-weight: 500;
+letter-spacing: -0.028em;
+color: var(–ink-100);
+line-height: 1;
+}
+
+.metric-value .unit {
+font-size: 0.55em;
+color: var(–ink-400);
+font-weight: 400;
+margin-left: 0.15em;
+}
+
+.metric-value.teal {
+color: var(–teal);
+}
+
+.metric-sub {
+font-size: 0.78rem;
+color: var(–ink-500);
+margin-top: 0.4rem;
+font-weight: 400;
+}
+
+/* ———–– SECTION ———–– */
+.section {
+padding: 4rem 3rem;
+border-bottom: 1px solid var(–navy-600);
+}
+
+.section-label {
+display: flex;
+align-items: center;
+gap: 0.75rem;
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: 0.7rem;
+letter-spacing: 0.28em;
+text-transform: uppercase;
+color: var(–teal);
+margin-bottom: 1.5rem;
+font-weight: 500;
+}
+
+.section-label::before {
+content: ‘’;
+width: 28px;
+height: 1px;
+background: var(–teal);
+}
+
+.section-title {
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: clamp(1.75rem, 3.6vw, 2.6rem);
+font-weight: 500;
+line-height: 1.1;
+letter-spacing: -0.028em;
+color: var(–ink-100);
+margin-bottom: 1rem;
+max-width: 760px;
+}
+
+.section-intro {
+font-size: 1.02rem;
+color: var(–ink-400);
+max-width: 680px;
+line-height: 1.65;
+font-weight: 300;
+}
+
+/* ———–– XI LINEUP ———–– */
+.lineup {
+margin-top: 2.75rem;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 0;
+border-top: 1px solid var(–navy-600);
+border-left: 1px solid var(–navy-600);
+}
+
+.player {
+padding: 1.5rem 1.75rem;
+border-right: 1px solid var(–navy-600);
+border-bottom: 1px solid var(–navy-600);
+display: grid;
+grid-template-columns: 1fr auto;
+align-items: start;
+gap: 1rem;
+transition: background 160ms ease;
+}
+
+.player:hover {
+background: var(–navy-700);
+}
+
+.player-left {
+min-width: 0;
+}
+
+.player-role {
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: 0.68rem;
+letter-spacing: 0.22em;
+text-transform: uppercase;
+color: var(–teal);
+font-weight: 500;
+margin-bottom: 0.5rem;
+}
+
+.player-fund {
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: 0.98rem;
+font-weight: 500;
+color: var(–ink-100);
+letter-spacing: -0.012em;
+line-height: 1.3;
+margin-bottom: 0.35rem;
+}
+
+.player-meta {
+font-size: 0.78rem;
+color: var(–ink-500);
+letter-spacing: 0.01em;
+}
+
+.player-return {
+text-align: right;
+min-width: 80px;
+}
+
+.return-value {
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: 1.18rem;
+font-weight: 500;
+letter-spacing: -0.025em;
+line-height: 1;
+}
+
+.return-value.pos { color: var(–teal); }
+.return-value.neg { color: var(–red); }
+.return-value.new { color: var(–amber); }
+
+.return-label {
+font-size: 0.68rem;
+color: var(–ink-500);
+margin-top: 0.35rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+
+/* ———–– ALLOCATION ———–– */
+.allocation {
+padding: 4rem 3rem;
+border-bottom: 1px solid var(–navy-600);
+}
+
+.alloc-bar {
+margin-top: 3rem;
+display: flex;
+height: 56px;
+border-radius: 2px;
+overflow: hidden;
+box-shadow: 0 0 0 1px var(–navy-600);
+}
+
+.alloc-seg {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+padding: 0 1.1rem;
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: 0.82rem;
+font-weight: 500;
+letter-spacing: -0.005em;
+transition: none;
+min-width: 0;
+overflow: hidden;
+white-space: nowrap;
+}
+
+.alloc-seg.growth {
+background: var(–teal);
+color: var(–navy-900);
+}
+
+.alloc-seg.balanced {
+background: #C9A978;
+color: var(–navy-900);
+}
+
+.alloc-seg.shield {
+background: #7A92AE;
+color: var(–navy-900);
+}
+
+.alloc-legend {
+margin-top: 2.5rem;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 0;
+border-top: 1px solid var(–navy-600);
+}
+
+.alloc-leg-item {
+padding: 1.75rem 1.5rem 1.75rem 0;
+border-right: 1px solid var(–navy-600);
+}
+
+.alloc-leg-item:not(:first-child) {
+padding-left: 1.5rem;
+}
+
+.alloc-leg-item:last-child {
+border-right: none;
+}
+
+.alloc-leg-head {
+display: flex;
+align-items: center;
+gap: 0.6rem;
+margin-bottom: 0.85rem;
+}
+
+.alloc-dot {
+width: 10px;
+height: 10px;
+border-radius: 50%;
+flex-shrink: 0;
+}
+
+.alloc-dot.growth { background: var(–teal); }
+.alloc-dot.balanced { background: #C9A978; }
+.alloc-dot.shield { background: #7A92AE; }
+
+.alloc-leg-name {
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: 0.72rem;
+font-weight: 500;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(–ink-200);
+}
+
+.alloc-leg-pct {
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: 2rem;
+font-weight: 500;
+letter-spacing: -0.035em;
+color: var(–ink-100);
+line-height: 1;
+margin-bottom: 0.35rem;
+}
+
+.alloc-leg-amount {
+font-family: ‘DM Sans’, sans-serif;
+font-size: 0.82rem;
+color: var(–ink-500);
+margin-bottom: 0.85rem;
+}
+
+.alloc-leg-desc {
+font-size: 0.88rem;
+color: var(–ink-400);
+line-height: 1.55;
+font-weight: 300;
+}
+
+.alloc-leg-desc em {
+color: var(–teal);
+font-style: normal;
+font-weight: 500;
+}
+
+/* ———–– CORRELATION PROOF ———–– */
+.proof {
+background: var(–navy-900);
+padding: 4rem 3rem;
+border-bottom: 1px solid var(–navy-600);
+}
+
+.proof-split {
+display: grid;
+grid-template-columns: 1fr auto 1fr;
+align-items: stretch;
+gap: 2rem;
+margin-top: 2.75rem;
+}
+
+.proof-card {
+padding: 2.25rem 1.75rem;
+background: var(–navy-800);
+border: 1px solid var(–navy-600);
+border-radius: 2px;
+position: relative;
+}
+
+.proof-card.red-card {
+border-top: 2px solid var(–red);
+}
+
+.proof-card.teal-card {
+border-top: 2px solid var(–teal);
+}
+
+.proof-card-role {
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: 0.7rem;
+letter-spacing: 0.22em;
+text-transform: uppercase;
+margin-bottom: 0.85rem;
+font-weight: 500;
+}
+
+.proof-card.red-card .proof-card-role { color: var(–red); }
+.proof-card.teal-card .proof-card-role { color: var(–teal); }
+
+.proof-card-fund {
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: 1.18rem;
+font-weight: 500;
+color: var(–ink-100);
+letter-spacing: -0.018em;
+line-height: 1.25;
+margin-bottom: 1.5rem;
+}
+
+.proof-data {
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+padding-top: 1.25rem;
+border-top: 1px solid var(–navy-600);
+}
+
+.proof-return {
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: 2.4rem;
+font-weight: 500;
+letter-spacing: -0.035em;
+line-height: 1;
+}
+
+.proof-card.red-card .proof-return { color: var(–red); }
+.proof-card.teal-card .proof-return { color: var(–teal); }
+
+.proof-days {
+text-align: right;
+font-size: 0.78rem;
+color: var(–ink-500);
+}
+
+.proof-days strong {
+display: block;
+color: var(–ink-200);
+font-family: ‘Space Grotesk’, sans-serif;
+font-weight: 500;
+font-size: 0.95rem;
+margin-bottom: 0.15rem;
+letter-spacing: -0.005em;
+}
+
+.proof-divider {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+color: var(–ink-500);
+position: relative;
+padding: 0 0.5rem;
+}
+
+.proof-divider-vs {
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: 0.7rem;
+letter-spacing: 0.24em;
+color: var(–ink-500);
+text-transform: uppercase;
+background: var(–navy-900);
+padding: 0.5rem 0;
+position: relative;
+z-index: 1;
+}
+
+.proof-divider::before {
+content: ‘’;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 50%;
+width: 1px;
+background: var(–navy-600);
+transform: translateX(-50%);
+}
+
+.proof-caption {
+margin-top: 2.5rem;
+padding: 1.5rem 1.75rem;
+background: var(–teal-soft);
+border-left: 2px solid var(–teal);
+font-family: ‘DM Sans’, sans-serif;
+font-size: 1.02rem;
+color: var(–ink-100);
+line-height: 1.6;
+font-weight: 400;
+letter-spacing: 0.002em;
+}
+
+.proof-caption strong {
+color: var(–teal);
+font-weight: 600;
+letter-spacing: 0.01em;
+}
+
+/* ———–– TAKEAWAYS ———–– */
+.takeaways {
+padding: 4rem 3rem;
+border-bottom: 1px solid var(–navy-600);
+}
+
+.takeaway-list {
+margin-top: 2.5rem;
+display: grid;
+gap: 1.25rem;
+}
+
+.takeaway {
+display: grid;
+grid-template-columns: 56px 1fr;
+gap: 1.5rem;
+padding: 1.5rem 0;
+border-top: 1px solid var(–navy-600);
+align-items: start;
+}
+
+.takeaway:last-child {
+border-bottom: 1px solid var(–navy-600);
+}
+
+.takeaway-num {
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: 2.5rem;
+font-weight: 400;
+color: var(–teal);
+line-height: 1;
+letter-spacing: -0.04em;
+}
+
+.takeaway-body {
+padding-top: 0.3rem;
+}
+
+.takeaway-head {
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: 1.15rem;
+font-weight: 500;
+color: var(–ink-100);
+letter-spacing: -0.015em;
+margin-bottom: 0.5rem;
+}
+
+.takeaway-text {
+font-size: 0.98rem;
+color: var(–ink-400);
+line-height: 1.6;
+font-weight: 300;
+max-width: 680px;
+}
+
+/* ———–– CLOSING ———–– */
+.closing {
+padding: 4rem 3rem 3rem;
+text-align: left;
+background: var(–navy-900);
+border-bottom: 1px solid var(–navy-600);
+}
+
+.closing-quote {
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: clamp(1.4rem, 2.6vw, 1.85rem);
+font-weight: 400;
+line-height: 1.35;
+color: var(–ink-100);
+letter-spacing: -0.018em;
+max-width: 720px;
+font-style: italic;
+}
+
+.closing-quote em {
+color: var(–teal);
+font-style: italic;
+}
+
+.closing-signoff {
+margin-top: 2rem;
+display: flex;
+align-items: center;
+gap: 0.75rem;
+}
+
+.closing-line {
+width: 32px;
+height: 1px;
+background: var(–teal);
+}
+
+.closing-name {
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: 0.85rem;
+font-weight: 500;
+color: var(–ink-200);
+letter-spacing: 0.08em;
+text-transform: uppercase;
+}
+
+/* ———–– FOOTER ———–– */
+.footer {
+padding: 2rem 3rem;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+gap: 2rem;
+background: var(–navy-900);
+}
+
+.footer-brand {
+font-family: ‘Space Grotesk’, sans-serif;
+font-size: 0.82rem;
+font-weight: 500;
+color: var(–ink-200);
+letter-spacing: 0.05em;
+margin-bottom: 0.25rem;
+}
+
+.footer-meta {
+font-size: 0.72rem;
+color: var(–ink-500);
+line-height: 1.55;
+max-width: 480px;
+letter-spacing: 0.01em;
+}
+
+.footer-amfi {
+text-align: right;
+font-size: 0.72rem;
+color: var(–ink-500);
+line-height: 1.55;
+letter-spacing: 0.01em;
+}
+
+.footer-amfi strong {
+color: var(–teal);
+font-family: ‘Space Grotesk’, sans-serif;
+font-weight: 500;
+display: block;
+margin-bottom: 0.2rem;
+letter-spacing: 0.08em;
+}
+
+/* ———–– RESPONSIVE ———–– */
+@media (max-width: 720px) {
+.topbar { padding: 1.25rem 1.5rem; }
+.hero { padding: 3rem 1.5rem 2rem; }
+.hero-client { position: static; text-align: left; margin-top: 2rem; }
+.metrics { grid-template-columns: 1fr 1fr; }
+.metric { padding: 1.5rem; border-bottom: 1px solid var(–navy-600); }
+.metric:nth-child(2n) { border-right: none; }
+.section, .proof, .takeaways, .closing, .allocation { padding: 3rem 1.5rem; }
+.lineup { grid-template-columns: 1fr; }
+.proof-split { grid-template-columns: 1fr; gap: 1rem; }
+.proof-divider { padding: 0.5rem 0; }
+.proof-divider::before { top: 50%; bottom: auto; left: 0; right: 0; width: 100%; height: 1px; transform: none; }
+.takeaway { grid-template-columns: 1fr; gap: 0.5rem; }
+.footer { flex-direction: column; padding: 1.5rem; }
+.footer-amfi { text-align: left; }
+.alloc-legend { grid-template-columns: 1fr; }
+.alloc-leg-item { padding: 1.5rem 0; border-right: none; border-bottom: 1px solid var(–navy-600); }
+.alloc-leg-item:last-child { border-bottom: none; }
+.alloc-seg { font-size: 0.7rem; padding: 0 0.6rem; }
+}
+
+/* ———–– PRINT ———–– */
+@media print {
+body { background: var(–navy-800); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { max-width: 100%; }
+.player:hover { background: transparent; }
+.section, .allocation, .proof, .takeaways { page-break-inside: avoid; }
+.closing { page-break-before: auto; }
+.hero { page-break-after: avoid; }
+.metrics { page-break-after: avoid; }
+}
+</style>
+
+</head>
+<body>
+
+<div class="page">
+
+  <!-- TOP BAR -->
+
+  <div class="topbar">
+    <div class="topbar-brand">
+      <div class="topbar-mark"></div>
+      <div class="topbar-name">Shashikesh Asset Services LLP</div>
+    </div>
+    <div class="topbar-meta">Portfolio Review · 23 April 2026</div>
+  </div>
+
+  <!-- HERO -->
+
+  <div class="hero">
+    <div class="hero-eyebrow">A Family Portfolio View</div>
+    <h1 class="hero-title">Your portfolio,<br>your <em>cricket XI.</em></h1>
+    <p class="hero-lede">
+      Twelve funds. Twelve roles. One winning team. Every player here has a specific job — and the game only makes sense when you watch the full eleven, not one batsman's scorecard.
+    </p>
+    <div class="hero-client">
+      <div class="hero-client-label">Prepared For</div>
+      <div class="hero-client-name">Meiyang Chang</div>
+    </div>
+  </div>
+
+  <!-- METRICS STRIP -->
+
+  <div class="metrics">
+    <div class="metric">
+      <div class="metric-label">Current Value</div>
+      <div class="metric-value teal">₹1.60 <span class="unit">Cr</span></div>
+      <div class="metric-sub">Across 12 funds</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Invested</div>
+      <div class="metric-value">₹1.07 <span class="unit">Cr</span></div>
+      <div class="metric-sub">Since 2006</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Profit</div>
+      <div class="metric-value">₹59.03 <span class="unit">L</span></div>
+      <div class="metric-sub">Incl. dividends</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Absolute</div>
+      <div class="metric-value">55.17<span class="unit">%</span></div>
+      <div class="metric-sub">Lifetime</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">XIRR</div>
+      <div class="metric-value">12.02<span class="unit">%</span></div>
+      <div class="metric-sub">Annualised</div>
+    </div>
+  </div>
+
+  <!-- THE XI -->
+
+  <div class="section">
+    <div class="section-label">The Playing XI</div>
+    <h2 class="section-title">A team of specialists, not eleven superstars.</h2>
+    <p class="section-intro">
+      You don't pick eleven Virat Kohlis for a Test match. You need openers who play patient, finishers who score fast, bowlers who defend, and a wicketkeeper who quietly keeps everything running. Your portfolio is built on the exact same logic.
+    </p>
+
+```
+<div class="lineup">
+
+  <!-- Opener #1 -->
+  <div class="player">
+    <div class="player-left">
+      <div class="player-role">Opener · 20 Years at Crease</div>
+      <div class="player-fund">Franklin India Large Cap</div>
+      <div class="player-meta">SIP since Apr 2006 · ₹12.49L invested</div>
+    </div>
+    <div class="player-return">
+      <div class="return-value pos">+90.4%</div>
+      <div class="return-label">Absolute</div>
+    </div>
+  </div>
+
+  <!-- Opener #2 -->
+  <div class="player">
+    <div class="player-left">
+      <div class="player-role">Opener · The 16-Year Veteran</div>
+      <div class="player-fund">Aditya Birla Sun Life Large Cap</div>
+      <div class="player-meta">SIP since Mar 2010 · ₹50K invested</div>
+    </div>
+    <div class="player-return">
+      <div class="return-value pos">+514%</div>
+      <div class="return-label">Absolute</div>
+    </div>
+  </div>
+
+  <!-- Top Order #3 -->
+  <div class="player">
+    <div class="player-left">
+      <div class="player-role">Top Order · Highest Scorer</div>
+      <div class="player-fund">HDFC Large Cap Fund</div>
+      <div class="player-meta">SIP since Apr 2012 · ₹8.40L → ₹30.69L</div>
+    </div>
+    <div class="player-return">
+      <div class="return-value pos">+265%</div>
+      <div class="return-label">Absolute</div>
+    </div>
+  </div>
+
+  <!-- Top Order #4 -->
+  <div class="player">
+    <div class="player-left">
+      <div class="player-role">Top Order · Attacking Middle</div>
+      <div class="player-fund">Kotak Flexi Cap Fund</div>
+      <div class="player-meta">SIP since Apr 2018 · ₹6L → ₹12.84L</div>
+    </div>
+    <div class="player-return">
+      <div class="return-value pos">+114%</div>
+      <div class="return-label">Absolute</div>
+    </div>
+  </div>
+
+  <!-- Top Order #5 -->
+  <div class="player">
+    <div class="player-left">
+      <div class="player-role">Top Order · Steady Accumulator</div>
+      <div class="player-fund">SBI Large Cap Fund</div>
+      <div class="player-meta">SIP since Apr 2018 · ₹5.90L → ₹12.18L</div>
+    </div>
+    <div class="player-return">
+      <div class="return-value pos">+106%</div>
+      <div class="return-label">Absolute</div>
+    </div>
+  </div>
+
+  <!-- All-Rounder -->
+  <div class="player">
+    <div class="player-left">
+      <div class="player-role">All-Rounder · Dividend Income</div>
+      <div class="player-fund">HDFC Balanced Advantage (IDCW)</div>
+      <div class="player-meta">Since Jun 2018 · ₹6.40L dividends paid</div>
+    </div>
+    <div class="player-return">
+      <div class="return-value pos">+75%</div>
+      <div class="return-label">Absolute</div>
+    </div>
+  </div>
+
+  <!-- Spinner -->
+  <div class="player">
+    <div class="player-left">
+      <div class="player-role">Specialist Spinner · Sectoral</div>
+      <div class="player-fund">Tata Digital India Fund</div>
+      <div class="player-meta">SIP since Jul 2022 · ₹1.45L → ₹1.83L</div>
+    </div>
+    <div class="player-return">
+      <div class="return-value pos">+26%</div>
+      <div class="return-label">Absolute</div>
+    </div>
+  </div>
+
+  <!-- Wicketkeeper (the hero) -->
+  <div class="player">
+    <div class="player-left">
+      <div class="player-role">Wicketkeeper · Silent Guardian</div>
+      <div class="player-fund">ICICI Prudential Ultra Short Term</div>
+      <div class="player-meta">Since Jan 2026 · Debt · 84 days</div>
+    </div>
+    <div class="player-return">
+      <div class="return-value pos">+1.63%</div>
+      <div class="return-label">84 days</div>
+    </div>
+  </div>
+
+  <!-- New middle order -->
+  <div class="player">
+    <div class="player-left">
+      <div class="player-role">Middle Order · New Debut</div>
+      <div class="player-fund">Nippon India Multi Cap</div>
+      <div class="player-meta">Lumpsum Apr 13, 2026 · Only 9 days old</div>
+    </div>
+    <div class="player-return">
+      <div class="return-value pos">+4.60%</div>
+      <div class="return-label">9 days</div>
+    </div>
+  </div>
+
+  <!-- Defender #1 -->
+  <div class="player">
+    <div class="player-left">
+      <div class="player-role">Defender · Conservative Anchor</div>
+      <div class="player-fund">DSP Multi Asset Allocation</div>
+      <div class="player-meta">Since Jan 2026 · 84 days · Settling in</div>
+    </div>
+    <div class="player-return">
+      <div class="return-value neg">−1.55%</div>
+      <div class="return-label">84 days</div>
+    </div>
+  </div>
+
+  <!-- Defender #2 -->
+  <div class="player">
+    <div class="player-left">
+      <div class="player-role">Defender · Balanced Anchor</div>
+      <div class="player-fund">ICICI Prudential Multi-Asset</div>
+      <div class="player-meta">Since Jan 2026 · 84 days · Settling in</div>
+    </div>
+    <div class="player-return">
+      <div class="return-value neg">−0.60%</div>
+      <div class="return-label">84 days</div>
+    </div>
+  </div>
+
+  <!-- Defender #3 -->
+  <div class="player">
+    <div class="player-left">
+      <div class="player-role">Defender · Equity Savings</div>
+      <div class="player-fund">ICICI Prudential Equity Savings</div>
+      <div class="player-meta">Since Jan 2026 · 82 days · Settling in</div>
+    </div>
+    <div class="player-return">
+      <div class="return-value neg">−0.65%</div>
+      <div class="return-label">82 days</div>
+    </div>
+  </div>
+
+</div>
+```
+
+  </div>
+
+  <!-- ALLOCATION -->
+
+  <div class="allocation">
+    <div class="section-label">The Shape of Your Capital</div>
+    <h2 class="section-title">Forty percent of your wealth is already built to protect you.</h2>
+    <p class="section-intro">
+      A diversified portfolio means not all of your money is riding on equity markets at once. Here is how your ₹1.60 Cr is actually spread today — the split between what grows, what balances, and what protects.
+    </p>
+
+```
+<div class="alloc-bar">
+  <div class="alloc-seg growth" style="flex: 59.42;">Growth · 59.4%</div>
+  <div class="alloc-seg balanced" style="flex: 31.03;">Balanced · 31.0%</div>
+  <div class="alloc-seg shield" style="flex: 9.55;">Shield · 9.5%</div>
+</div>
+
+<div class="alloc-legend">
+  <div class="alloc-leg-item">
+    <div class="alloc-leg-head">
+      <div class="alloc-dot growth"></div>
+      <div class="alloc-leg-name">Growth Engine</div>
+    </div>
+    <div class="alloc-leg-pct">59.4%</div>
+    <div class="alloc-leg-amount">₹94.86 L · Pure equity</div>
+    <div class="alloc-leg-desc">
+      Large cap, flexi cap, multi cap, sectoral. <em>This is what compounds when markets rally</em> — and has already done most of the heavy lifting on your ₹59 lakh profit.
+    </div>
+  </div>
+
+  <div class="alloc-leg-item">
+    <div class="alloc-leg-head">
+      <div class="alloc-dot balanced"></div>
+      <div class="alloc-leg-name">Balanced Middle</div>
+    </div>
+    <div class="alloc-leg-pct">31.0%</div>
+    <div class="alloc-leg-amount">₹49.53 L · Hybrid</div>
+    <div class="alloc-leg-desc">
+      Balanced advantage, multi-asset, equity savings — each carrying its own mix of equity, debt and gold inside. <em>This is what cushions you when markets wobble.</em>
+    </div>
+  </div>
+
+  <div class="alloc-leg-item">
+    <div class="alloc-leg-head">
+      <div class="alloc-dot shield"></div>
+      <div class="alloc-leg-name">Safety Shield</div>
+    </div>
+    <div class="alloc-leg-pct">9.5%</div>
+    <div class="alloc-leg-amount">₹15.24 L · Pure debt</div>
+    <div class="alloc-leg-desc">
+      Ultra short term debt. <em>This is the capital that stays standing in any storm</em> — and it's quietly earning 1.63% even during this rough quarter.
+    </div>
+  </div>
+</div>
+```
+
+  </div>
+
+  <!-- CORRELATION PROOF -->
+
+  <div class="proof">
+    <div class="section-label">The Correlation Proof</div>
+    <h2 class="section-title">Why red and green on the same day is not a problem — it's the plan.</h2>
+    <p class="section-intro">
+      Two funds. Same day. Same ₹15L class of money. Different jobs, different outcomes. This is the single clearest proof that your portfolio is built with low correlation — and that is exactly what protects you when markets turn.
+    </p>
+
+```
+<div class="proof-split">
+
+  <div class="proof-card red-card">
+    <div class="proof-card-role">Invested · 28 Jan 2026</div>
+    <div class="proof-card-fund">DSP Multi Asset<br>Allocation Fund</div>
+    <div class="proof-data">
+      <div class="proof-return">−1.55%</div>
+      <div class="proof-days">
+        <strong>84 Days</strong>
+        Equity + Debt + Gold
+      </div>
+    </div>
+  </div>
+
+  <div class="proof-divider">
+    <div class="proof-divider-vs">Same Day<br>Same Sir</div>
+  </div>
+
+  <div class="proof-card teal-card">
+    <div class="proof-card-role">Invested · 28 Jan 2026</div>
+    <div class="proof-card-fund">ICICI Prudential<br>Ultra Short Term</div>
+    <div class="proof-data">
+      <div class="proof-return">+1.63%</div>
+      <div class="proof-days">
+        <strong>84 Days</strong>
+        Pure Debt
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="proof-caption">
+  If every fund moved together, you'd have <strong>zero protection</strong> when equity markets crash. The fact that these two funds went in opposite directions over the exact same 84 days is not a problem — it is proof the portfolio is doing its job.
+</div>
+```
+
+  </div>
+
+  <!-- TAKEAWAYS -->
+
+  <div class="takeaways">
+    <div class="section-label">Three Things to Remember</div>
+    <h2 class="section-title">How to read your portfolio from here.</h2>
+
+```
+<div class="takeaway-list">
+
+  <div class="takeaway">
+    <div class="takeaway-num">01</div>
+    <div class="takeaway-body">
+      <div class="takeaway-head">Stop scoreboard-watching one fund at a time.</div>
+      <div class="takeaway-text">
+        Look at the family. A 12.02% XIRR on ₹1.07 Cr across nearly two decades — that is genuinely remarkable work. One fund in the red for 84 days means very little in a match that's been running for 20 years.
+      </div>
+    </div>
+  </div>
+
+  <div class="takeaway">
+    <div class="takeaway-num">02</div>
+    <div class="takeaway-body">
+      <div class="takeaway-head">The January 2026 funds are your cheapest entry — not your problem.</div>
+      <div class="takeaway-text">
+        DSP and ICICI Multi-Asset are down because they were bought before a dip, not after. Adding more to these at current levels lowers your average cost and strengthens your long-term position. The pain is short. The math is patient.
+      </div>
+    </div>
+  </div>
+
+  <div class="takeaway">
+    <div class="takeaway-num">03</div>
+    <div class="takeaway-body">
+      <div class="takeaway-head">Trust the team, not the individual innings.</div>
+      <div class="takeaway-text">
+        Green funds and red funds in the same portfolio are not a mistake — they are the design. When one side bleeds, the other cushions. That is what a 20-year portfolio looks like, and yours is quietly doing its job.
+      </div>
+    </div>
+  </div>
+
+</div>
+```
+
+  </div>
+
+  <!-- CLOSING -->
+
+  <div class="closing">
+    <div class="closing-quote">
+      You're not watching a T20 match, Sir. You're playing a long Test.<br>
+      And the <em>scoreboard of one innings</em> means very little.
+    </div>
+    <div class="closing-signoff">
+      <div class="closing-line"></div>
+      <div class="closing-name">Nishit Shah · Shashikesh Asset Services LLP</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+
+  <div class="footer">
+    <div>
+      <div class="footer-brand">Shashikesh Asset Services LLP</div>
+      <div class="footer-meta">
+        202, 2nd Floor, Shanti Bhavan, Bank More, Dhanbad – 826001<br>
+        Mutual Fund investments are subject to market risk. Please read all scheme-related documents carefully. Past performance is not indicative of future returns.
+      </div>
+    </div>
+    <div class="footer-amfi">
+      <strong>ARN-110098</strong>
+      AMFI-Registered<br>
+      Mutual Fund Distributor
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
